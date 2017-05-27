@@ -1,0 +1,12 @@
+window.addEventListener('load', function(e) {
+  document.querySelector('#test').innerHTML = 'coin flip';
+}, false);
+
+var Coin = {
+    sideup: "heads"
+    coinflip: function () {
+        if (Math.floor(Math.random() + 1) == 0) {
+            Coin.sideup = "heads"
+        } else {
+            Coin.sideup = "tails"
+        }
