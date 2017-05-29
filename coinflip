@@ -10,3 +10,8 @@ var Coin = {
         } else {
             Coin.sideup = "tails"
         }
+    return Coin.sideup
+
+var coin1 = Coin
+
+window.alert(coin1.coinflip)
