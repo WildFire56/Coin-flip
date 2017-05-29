@@ -5,7 +5,7 @@ window.addEventListener('load', function(e) {
 var Coin = {
     sideup: "heads",
     coinflip: function () {
-        if (Math.floor(Math.random() + 1) == 0) {
+        if (Math.round(Math.random()) == 0) {
             Coin.sideup = "heads";
         } else {
             Coin.sideup = "tails";
