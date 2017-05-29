@@ -3,15 +3,17 @@ window.addEventListener('load', function(e) {
 }, false);
 
 var Coin = {
-    sideup: "heads"
+    sideup: "heads",
     coinflip: function () {
         if (Math.floor(Math.random() + 1) == 0) {
-            Coin.sideup = "heads"
+            Coin.sideup = "heads";
         } else {
-            Coin.sideup = "tails"
+            Coin.sideup = "tails";
         }
-    return Coin.sideup
+        return Coin.sideup;
+    }
+};
 
-var coin1 = Coin
+var coin1 = Coin;
 
-window.alert(coin1.coinflip)
+window.alert(coin1.coinflip());
