@@ -14,6 +14,14 @@ var Coin = {
     }
 };
 
+var button = document.createElement("button");
+var text = document.createTextNode("Flip");
+button.appendChild(text);
+document.body.appendChild(button);
+
 var coin1 = Coin;
 
-window.alert(coin1.coinflip());
+button.addEventListener("click", function(){
+  window.alert(coin1.coinflip());
+});
+
